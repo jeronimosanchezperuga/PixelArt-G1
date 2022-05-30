@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 5e46871c2321f094caa1f0e1ccacf108
+guid: d12b14f1d18291045a57be8fa461c1ed
 TextureImporter:
   fileIDToRecycleName:
-    21300000: cielito_Celeste
-    21300002: Bolotner Gatti_Olivia_49438341_5
-    21300004: Cielito_claro
-    21300006: Pasto
+    21300000: moneda_0
+    21300002: moneda_1
+    21300004: moneda_2
+    21300006: moneda_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -44,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +64,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -77,31 +77,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cielito_Celeste
+      name: moneda_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99c64d1b3059c6343be9cb0aa37b1148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bolotner Gatti_Olivia_49438341_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 18
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -111,19 +91,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c573686f3f517414790ca17188ea57b2
+      spriteID: 1d74b16dc96867b4095b5112e37b1caf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cielito_claro
+      name: moneda_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 18
-        width: 6
-        height: 6
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1182c3ce49d07584e9c523e0d170123f
+      spriteID: 245496c94e3029b49935cd9a5f8e37f3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pasto
+      name: moneda_2
       rect:
         serializedVersion: 2
-        x: 19
-        y: 7
-        width: 11
-        height: 11
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,7 +131,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e959edac3d7798d4db8aaf989811f86b
+      spriteID: aabf815890fac6249beab7741e210fd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moneda_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8f1aa71027e2d41818320a4d21d947
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 05352e95d90a8a845a487697e05b927f
+    spriteID: 84934c41ff9bd7e44828f68e1f02df2d
     vertices: []
     indices: 
     edges: []
