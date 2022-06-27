@@ -1,0 +1,9 @@
+1. Avanzar hacia la derecha
+Aparecen fantasmas y avanzan hacia nosotros
+Si nos tocan nos sacan vida (tres toques ymorimos)
+Podemos matarlos con una espada
+Debemos matar/esquivar todos los fantasmas y llegar al final del nivel
+
+
+
+
