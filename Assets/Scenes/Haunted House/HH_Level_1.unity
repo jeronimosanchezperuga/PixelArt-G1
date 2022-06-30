@@ -594,7 +594,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 1579878080}
   - component: {fileID: 1579878079}
   - component: {fileID: 1579878081}
-  - component: {fileID: 1579878084}
+  - component: {fileID: 1579878085}
   - component: {fileID: 1579878083}
   - component: {fileID: 1579878082}
   m_Layer: 0
@@ -1606,7 +1606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   harmfullIfTouchedTag: 
-  healthScript: {fileID: 0}
+  healthScript: {fileID: 1579878085}
 --- !u!50 &1579878083
 Rigidbody2D:
   serializedVersion: 4
@@ -1615,7 +1615,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579878076}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1627,8 +1627,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1579878084
+  m_Constraints: 4
+--- !u!114 &1579878085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1637,15 +1637,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1579878076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e0f70f412912324098f4319bfd46d69, type: 3}
+  m_Script: {fileID: 11500000, guid: eec6bd448a712994f9c9128f194100a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 1
   health: 1
   blink: {fileID: 438708711}
-  rb: {fileID: 1579878083}
-  knockBackForce: 10
-  knockBackDuration: 1
+  knockBackForce: 0
+  knockBackDuration: 0
 --- !u!1 &1615667059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3535611325657203125, guid: b1d8b6d6a2642d448a78bae72ac6190d,

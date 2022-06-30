@@ -7,7 +7,7 @@ public class EnemyCollision : MonoBehaviour
     [SerializeField]
     string harmfullIfTouchedTag;
     [SerializeField]
-    Health healthScript;
+    EnemyHealth healthScript;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +20,14 @@ public class EnemyCollision : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
         if (go.CompareTag("Finish"))
         {
-                healthScript.GetDamage(1, collision.gameObject.transform);
-         
+            healthScript.GetDamage(1);
         }
     }
+    
 }
