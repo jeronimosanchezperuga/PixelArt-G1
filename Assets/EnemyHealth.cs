@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     private GameObject blink;
     public float knockBackForce;
     public float knockBackDuration;
+    public GameObject deathEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
             if (lives <= 0)
             {
                 //die
-                //Invoke("Death", 0.1f);
+                Invoke("Death", 0.1f);
                 return;
             }
             return;
@@ -44,7 +45,8 @@ public class EnemyHealth : MonoBehaviour
 
     void Death()
     {
-        Destroy(gameObject);
+        Instantiate(deathEffect,transform.position,Quaternion.identity);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 
     void Blink()

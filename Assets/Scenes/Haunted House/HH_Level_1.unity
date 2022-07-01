@@ -1410,6 +1410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496933621}
   - component: {fileID: 1496933622}
+  - component: {fileID: 1496933623}
   m_Layer: 0
   m_Name: FANTASMA
   m_TagString: Untagged
@@ -1441,7 +1442,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496933620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e76cfecccd9d544ab5799ae07e9b4be, type: 3}
   m_Name: 
@@ -1452,6 +1453,25 @@ MonoBehaviour:
   speed: 0.5
   toLeft: 1
   distanceThreshold: 0.3
+--- !u!114 &1496933623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496933620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c82c35cd37cc24c8691d46b20a7ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrollerTR: {fileID: 1579878078}
+  target1: {fileID: 1615667063}
+  target2: {fileID: 0}
+  speed: 0.5
+  toLeft: 1
+  distanceThreshold: 1
+  direction: 0
 --- !u!1 &1579878076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,6 +1665,8 @@ MonoBehaviour:
   blink: {fileID: 438708711}
   knockBackForce: 0
   knockBackDuration: 0
+  deathEffect: {fileID: 5727882434213487016, guid: 11fc223a27f4f244c9b6532d1cf0149c,
+    type: 3}
 --- !u!1 &1615667059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3535611325657203125, guid: b1d8b6d6a2642d448a78bae72ac6190d,

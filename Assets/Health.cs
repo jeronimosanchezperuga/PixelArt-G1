@@ -69,7 +69,6 @@ public class Health : MonoBehaviour
         float timer = 0;
         while (duration > timer)
         {
-            Debug.Log(timer);
             timer += Time.deltaTime;
             Vector2 direction = (obj.transform.position - transform.position).normalized;
             rb.velocity = Vector2.zero;
