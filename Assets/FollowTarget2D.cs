@@ -18,8 +18,13 @@ public class FollowTarget2D : MonoBehaviour
     public float direction;
     // Start is called before the first frame update
     void Start()
-    {
+    {        
+        if (!target1)
+        {
+            target1 = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        }
         currentTarget = target1;
+
     }
 
     // Update is called once per frame

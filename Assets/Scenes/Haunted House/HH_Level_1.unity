@@ -327,6 +327,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &354167787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354167789}
+  - component: {fileID: 354167788}
+  m_Layer: 0
+  m_Name: '[SPAWNENEMIES]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &354167788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354167787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10319bd09bbe74c41bc9ae172e661923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4351441682336464468, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+    type: 3}
+  spawnPointTR: {fileID: 0}
+  autoSpawn: 1
+  randomPosition: 1
+  spawnInterval: 1
+  elapsedTime: 0
+  nextSpawnTime: 0
+  topLefLimit: {x: 1.44, y: 2.79}
+  bottomRightLimit: {x: 9.32, y: -0.18}
+--- !u!4 &354167789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354167787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.32, y: -0.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &438708711
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &864035573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -899,7 +952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1077309122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1038,7 +1091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1213783841
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1147,7 +1200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1243261251
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1226,7 +1279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1318165650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1305,7 +1358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1385076152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1383,7 +1436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1392207216
 Transform:
   m_ObjectHideFlags: 0
@@ -1410,14 +1463,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1496933621}
   - component: {fileID: 1496933622}
-  - component: {fileID: 1496933623}
   m_Layer: 0
-  m_Name: FANTASMA
+  m_Name: FANTASMA patrulla
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496933621
 Transform:
   m_ObjectHideFlags: 0
@@ -1442,7 +1494,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496933620}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e76cfecccd9d544ab5799ae07e9b4be, type: 3}
   m_Name: 
@@ -1453,25 +1505,6 @@ MonoBehaviour:
   speed: 0.5
   toLeft: 1
   distanceThreshold: 0.3
---- !u!114 &1496933623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496933620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c82c35cd37cc24c8691d46b20a7ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrollerTR: {fileID: 1579878078}
-  target1: {fileID: 1615667063}
-  target2: {fileID: 0}
-  speed: 0.5
-  toLeft: 1
-  distanceThreshold: 1
-  direction: 0
 --- !u!1 &1579878076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +2067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1952244736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2109,6 +2142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HH_Panel_1x1
       objectReference: {fileID: 0}
+    - target: {fileID: 226295246254764721, guid: 479368f4ff071784990b0a810544618f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 226295246254764723, guid: 479368f4ff071784990b0a810544618f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2182,6 +2220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535611325657203125, guid: b1d8b6d6a2642d448a78bae72ac6190d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3535611325657203126, guid: b1d8b6d6a2642d448a78bae72ac6190d,
         type: 3}
