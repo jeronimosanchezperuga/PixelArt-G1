@@ -667,7 +667,7 @@ PolygonCollider2D:
       - {x: -0.12493849, y: -0.06887674}
       - {x: -0.049624443, y: -0.13356352}
       - {x: 0.1982503, y: 0.11100006}
-      - {x: 0.22412539, y: 0.25431228}
+      - {x: 0.35827017, y: 0.38845706}
 --- !u!1 &833471016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1752,7 @@ MonoBehaviour:
   rb: {fileID: 1615667064}
   knockBackForce: 10
   knockBackDuration: 1
+  noDamageTime: 1
 --- !u!4 &1615667063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3535611325657203126, guid: b1d8b6d6a2642d448a78bae72ac6190d,

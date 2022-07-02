@@ -11,6 +11,9 @@ public class Health : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     public float knockBackForce;
     public float knockBackDuration;
+    [SerializeField]
+    private float noDamageTime = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,7 @@ public class Health : MonoBehaviour
         health -= damageAmount;
         Blink();
         StartCoroutine(IKnockBack(knockBackDuration,knockBackForce,obj));
+        Invulnerability();
         if (health <= 0)
         {
             lives--;
@@ -47,6 +51,21 @@ public class Health : MonoBehaviour
     void Death()
     {
         Destroy(gameObject);
+    }
+    void Invulnerability()
+    {
+        Invoke("SendToSafeLayer",0);
+        Invoke("SendToDefaultLayer", noDamageTime);
+    }
+
+    void SendToSafeLayer()
+    {
+        gameObject.layer = 9;
+    }
+
+    void SendToDefaultLayer()
+    {
+        gameObject.layer = 0;
     }
 
     void Blink()

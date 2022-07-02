@@ -33,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
             if (lives <= 0)
             {
                 //die
+                gameObject.tag = "Respawn";
                 Invoke("Death", 0.1f);
                 return;
             }
