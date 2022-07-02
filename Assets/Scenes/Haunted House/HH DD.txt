@@ -1,17 +1,30 @@
 1. Avanzar hacia la derecha
-. Al saltar reducir la velocidad //
+. Al saltar reducir la velocidad // MEJOR NO
 
-Aparecen fantasmas y avanzan hacia nosotros
+Aparecen fantasmas y avanzan hacia nosotros OK
+. emiten un sonido al comenzar a perseguirnos y al dejar de hacerlo
+. aparecen a medida que avanzamos y llegamos a las zonas que los atraen
+. si nos alejamos lo suficiente, el fantasma dejará de seguirnos
 
-Si nos tocan nos sacan vida (tres toques y morimos)
-. EL personaje parpadea y no puede recibir daño por unos segundos
-. Recibe un impulso en el sentido opuesto al enemigo que lo dañó
-. Emite un sonido
+Si nos tocan nos sacan vida (tres toques y morimos) OK
+. EL personaje parpadea y no puede recibir daño por unos segundos OK
+. Recibe un impulso en el sentido opuesto al enemigo que lo dañó OK
+. Emite un sonido FALTA
 . 
 
-Podemos matarlos con una espada
+Podemos matarlos con una espada OK
+. al morir realizan una animación OK
+. emiten un sonido FALTA
 
 Debemos matar/esquivar todos los fantasmas y llegar al final del nivel
+. plantear un nivel básico con elementos:
+.. decorativos (no interactuables)
+.. interactables (puertas y bibliotecas)
+.. escalones y plataformas
+.. escaleras verticales
+.. zonas de activación de enemigos
+.. zonas de muerte
+.. zona de llegada
 
 
 
