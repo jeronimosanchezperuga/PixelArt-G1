@@ -38,7 +38,7 @@ public class Health : MonoBehaviour
             if (lives <= 0)
             {
                 //die
-                //Invoke("Death", 0.1f);
+                Invoke("Death", 0.1f);
                 return;
             }
             return;
