@@ -2,9 +2,9 @@
 . Al saltar reducir la velocidad // MEJOR NO
 
 Aparecen fantasmas y avanzan hacia nosotros OK
-. emiten un sonido al comenzar a perseguirnos y al dejar de hacerlo
-. aparecen a medida que avanzamos y llegamos a las zonas que los atraen
-. si nos alejamos lo suficiente, el fantasma dejará de seguirnos
+. emiten un sonido al comenzar a perseguirnos y al dejar de hacerlo FALTA
+. aparecen a medida que avanzamos y llegamos a las zonas que los atraen FALTA
+. si nos alejamos lo suficiente, el fantasma dejará de seguirnos FALTA
 
 Si nos tocan nos sacan vida (tres toques y morimos) OK
 . EL personaje parpadea y no puede recibir daño por unos segundos OK

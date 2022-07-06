@@ -1,0 +1,8 @@
+1. El personaje es el caballero que ataca con una lanza
+2. Se mueve izq der y salta
+3. Enemigos:
+Ojo que giraba para moverse, para atacar se para y dispara un laser
+Summon y minions
+Slime 
+
+Ciro y Gutierrez

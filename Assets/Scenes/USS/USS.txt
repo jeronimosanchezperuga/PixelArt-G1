@@ -1,0 +1,32 @@
+1. EL personaje se mueve a izq y der y salta. 
+2. EL personaje ataca y recibe ataques.
+. 5 golpes y muere
+.Bloquea ataques si ataca simultáneamente
+3. Avanza hacia izq y derecha y se repite el fondo, no hay un fin del recorrido
+4. Aparece un boss (USS) luego de destruir a x cantidad de enemigos
+5. Enemigos:
+a. La rana 
+animaciones:
+.Salto avance
+b. El embestidor
+. camina idle
+. se agacha al verte
+. embiste hacia vos
+c. Volador
+.vuela acercandose a vos
+. al estar cerca ataca (doble mordida)
+d. Escarabajo Soldado
+. camina idle
+. al verte te sigue
+. y al acercarse ataca con la espada
+e. La chinche
+. camina y al estar cerca explota
+f. Bicho moro
+. lo mismo que el embestidor pero más corto y se cansa (descansa un rato)
+g. SSU (boss)
+. camina
+. salta
+. ataque magia negra
+. después de tres ataques el daño aumenta (animacion)
+
+
