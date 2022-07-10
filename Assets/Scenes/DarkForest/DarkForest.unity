@@ -2154,7 +2154,7 @@ MonoBehaviour:
   blink: {fileID: 5332982997811906044}
   knockBackForce: 0
   knockBackDuration: 0
-  deathEffect: {fileID: 5727882434213487016, guid: 11fc223a27f4f244c9b6532d1cf0149c,
+  deathEffect: {fileID: 1538860479259906829, guid: 18f3461fcef2b70428aa3563d3526a9f,
     type: 3}
 --- !u!4 &2020874225140338494
 Transform:
@@ -2517,5 +2517,5 @@ MonoBehaviour:
   healthScript: {fileID: 1004213271606343119}
   followScript: {fileID: 0}
   parentTR: {fileID: 5454614796021441553}
-  knockForce: 1
+  knockForce: 0.5
   direction: 0
