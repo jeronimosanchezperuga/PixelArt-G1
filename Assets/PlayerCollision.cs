@@ -22,20 +22,27 @@ public class PlayerCollision : MonoBehaviour
         
     }
 
-  
+
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {        
+    {
         GameObject go = collision.gameObject;
         if (go.CompareTag(harmfullIfTouchedTag))
-        {   
+        {
             //gets the statistics of the character touched
             CharacterStats charStats = go.GetComponent<CharacterStats>();
             //if the component exists, use its data
             if (charStats)
             {
-                healthScript.GetDamage(charStats.damagePoints,collision.gameObject.transform);
-            }            
+                healthScript.GetDamage(charStats.damagePoints, collision.gameObject.transform);
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            healthScript.LooseALife();
         }
     }
 }

@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public float knockBackDuration;
     [SerializeField]
     private float noDamageTime = 1f;
+    [SerializeField]private Vector3 spawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -29,28 +30,33 @@ public class Health : MonoBehaviour
     public void GetDamage(int damageAmount,Transform obj)
     {
         health -= damageAmount;
+        //damage animation + sound + etc
         Blink();
         StartCoroutine(IKnockBack(knockBackDuration,knockBackForce,obj));
         Invulnerability();
         if (health <= 0)
         {
-            lives--;
-            if (lives <= 0)
-            {
-                //die
-                Invoke("Death", 0.1f);
-                return;
-            }
+            LooseALife();
             return;
         }
-        //damage animation + sound + etc
-        
         //update UI
     }
 
     void Death()
     {
         Destroy(gameObject);
+    }
+
+    public void LooseALife()
+    {
+        lives--;
+        if (lives <= 0)
+        {
+            //die
+            Invoke("Death", 0.1f);
+            return;
+        }
+        transform.position = spawnPoint;
     }
     void Invulnerability()
     {

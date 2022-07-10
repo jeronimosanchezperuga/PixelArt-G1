@@ -11,6 +11,7 @@ a. Ojo flotante
 .. cómo detectar que el player lo esquivó? 
 ... chequear de qué lado de x se encuentra y si el lado cambia es que lo esquivaron
 AL pegarle el ojo retrocede. DONE
+4. Respawn de player
 
 
 Primer nivel: tutorial y ejercitamos el salto para evitar los pozos de pinchos a través de plataformas.

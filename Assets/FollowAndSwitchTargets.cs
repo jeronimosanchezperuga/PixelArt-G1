@@ -32,7 +32,8 @@ public class FollowAndSwitchTargets : MonoBehaviour
         var step = speed * Time.deltaTime;
         followerTR.position = Vector3.MoveTowards(followerTR.position, currentTarget.position, step);
 
-        if (targetIsLeft != targetIsLeftLastValue)
+        //if Player evades enemy, enemy takes target2
+        if (targetIsLeft != targetIsLeftLastValue && followTarget1)
         {
             int direction = targetIsLeft ? 1 : -1;
             followTarget1 = false;
