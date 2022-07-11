@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("wJump"))
         {
             jump = true;
         }
