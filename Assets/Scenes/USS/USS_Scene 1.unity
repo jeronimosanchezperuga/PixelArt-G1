@@ -435,7 +435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786184151
 GameObject:
@@ -514,7 +514,7 @@ Transform:
   m_LocalScale: {x: 5.103843, y: 5.103843, z: 5.103843}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863665504
 GameObject:
@@ -571,8 +571,89 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &922798122
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3819441497244473261, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e667c093c099b14195e03e3e64e2b69,
+        type: 3}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4786806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22930002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230965525000200941, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351441682336464468, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_Name
+      value: FANTASMA perseguidor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753854724020298905, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e667c093c099b14195e03e3e64e2b69,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6b9b077402cb9e4ea7d7ff614cc3edb, type: 3}
 --- !u!1 &941131153
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +802,7 @@ Transform:
   - {fileID: 8094632658791920328}
   - {fileID: 941131156}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4703141474075313597
 SpriteRenderer:
@@ -1098,7 +1179,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 8094632659810179955}
+  rb: {fileID: 0}
   runSpeed: 20
+  onStair: 0
+  stairX: 0
+  stairSpeed: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &8094632659810179967
 MonoBehaviour:
   m_ObjectHideFlags: 0
