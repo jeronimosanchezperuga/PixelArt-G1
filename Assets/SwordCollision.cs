@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCollision : MonoBehaviour
+public class SwordCollision : MonoBehaviour
 {
-    [SerializeField]
-    string harmfullIfTouchedTag;
-    [SerializeField]
-    EnemyHealth healthScript;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +18,9 @@ public class EnemyCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject go = collision.gameObject;
-        Debug.Log(go.gameObject);
-        if (go.CompareTag("Finish"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
-            healthScript.GetDamage(1);
+            Destroy(collision.gameObject);
         }
     }
-    
 }

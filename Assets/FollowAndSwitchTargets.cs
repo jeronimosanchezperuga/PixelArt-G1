@@ -39,6 +39,7 @@ public class FollowAndSwitchTargets : MonoBehaviour
             followTarget1 = false;
             target2.position = new Vector2(transform.position.x + Random.Range(1,1) * direction, transform.position.y + Random.Range(-1, 1));
         }
+        //after aproaching the false target, it turn and chase the true target
         if (!followTarget1 && Vector2.Distance(followerTR.position, currentTarget.position) < distanceThreshold )
         {
             followTarget1 = true;

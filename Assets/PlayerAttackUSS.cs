@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class PlayerAttackUSS : MonoBehaviour
 {
     [SerializeField] GameObject sword;
-    [SerializeField] GameObject shield;
-    [SerializeField] Transform shieldRef;
+    [SerializeField] Transform swordRef;
     
     // Start is called before the first frame update
     void Start()
@@ -19,14 +18,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-                SwordAttack();
-            if (shield)
-            {
-               var clon = Instantiate(shield, shieldRef.position, Quaternion.identity);
-                Vector3 newScale = Vector3.one * transform.localScale.x; ;
-                clon.transform.localScale = newScale;
-                Destroy(clon,.2f);
-            }
+            SwordAttack();   
         }        
     }
 
@@ -39,6 +31,10 @@ public class PlayerAttack : MonoBehaviour
     void EnableSword()
     {
         sword.SetActive(true);
+        Vector3 oldScale = sword.transform.localScale;
+        Vector3 newScale = new Vector3( oldScale.x * transform.localScale.x,oldScale.y,oldScale.z) ;
+        sword.transform.localScale = newScale;
+        sword.transform.position = swordRef.transform.position;
     }
     void DisableSword()
     {

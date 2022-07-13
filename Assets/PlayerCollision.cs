@@ -43,6 +43,10 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Death"))
         {
             healthScript.LooseALife();
+        }else if (collision.gameObject.CompareTag("Bullet"))
+        {
+            healthScript.GetDamage(1, collision.gameObject.transform);
+            Destroy(collision.gameObject);
         }
     }
 }

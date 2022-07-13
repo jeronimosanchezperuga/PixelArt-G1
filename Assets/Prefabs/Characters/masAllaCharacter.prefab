@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5376154435573606331}
   - component: {fileID: 1177474998057310248}
+  - component: {fileID: 316746827355673991}
   m_Layer: 0
   m_Name: masAllaCharacter
   m_TagString: Untagged
@@ -79,3 +80,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &316746827355673991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333652480688477474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960769366be1cab468fa7d6360221cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

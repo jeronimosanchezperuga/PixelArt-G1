@@ -41,7 +41,7 @@ public class PatrolBetweenTwoTargets2D : MonoBehaviour
         {
             toLeft = !toLeft;
             //flip the sprite to face the other side
-            patrollerTR.Rotate(0,180,0); ;
+            patrollerTR.Rotate(0,180,0);
         }
     }
 }
