@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolThenFollowTarget2D1 : MonoBehaviour
+public class PatrolThenFollowTargetAnim : MonoBehaviour
 {
     public Transform patrollerTR;
     [SerializeField]

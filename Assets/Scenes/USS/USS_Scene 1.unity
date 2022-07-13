@@ -196,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 8310154396900858142}
   swordRef: {fileID: 630742786}
+  swordDistance: {x: 0, y: 0, z: 0}
 --- !u!1 &334698347
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: masAllaCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 333652480688477474, guid: 518dcf1067ee48c47ba8da6a434782a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376154435573606331, guid: 518dcf1067ee48c47ba8da6a434782a9,
         type: 3}
@@ -671,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 4351441682336464468, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638795453484481311, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
         type: 3}
@@ -729,7 +735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 922798123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1f55b13897eb4f46a4de480680c3270, type: 3}
+  m_Script: {fileID: 11500000, guid: 942db7ae667eb7e4f8f19a54e8a07b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   patrollerTR: {fileID: 1201368487}
@@ -1207,6 +1213,7 @@ GameObject:
   - component: {fileID: 8310154396900858141}
   - component: {fileID: 8310154396900858138}
   - component: {fileID: 462004758532494684}
+  - component: {fileID: 8310154396900858143}
   m_Layer: 0
   m_Name: attackArea
   m_TagString: Finish
@@ -1214,3 +1221,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8310154396900858143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8310154396900858142}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a88304fbc81054696a7d7330fdd8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 630742786}
+  distance: {x: 1, y: 0, z: 0}
