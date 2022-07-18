@@ -176,6 +176,52 @@ PolygonCollider2D:
       - {x: 0.39980006, y: -0.319082}
       - {x: 0.30870962, y: -0.01037249}
       - {x: 0.1654911, y: 0.20850971}
+--- !u!1 &195998260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 195998261}
+  - component: {fileID: 195998262}
+  m_Layer: 0
+  m_Name: ATTACK AREA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &195998261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195998260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.733, y: -0.758, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8310154396900858139}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &195998262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195998260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a88304fbc81054696a7d7330fdd8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 630742786}
+  distance: {x: 0, y: 0, z: 0}
 --- !u!1 &207052538 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9116370374238120875, guid: 99de68cfb176dce4383b1cdd730a9076,
@@ -194,9 +240,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234959edf2f9b5e4e8aead301d4441ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sword: {fileID: 8310154396900858142}
+  sword: {fileID: 195998260}
   swordRef: {fileID: 630742786}
   swordDistance: {x: 0, y: 0, z: 0}
+  attackAreaSize: 1.5
 --- !u!1 &334698347
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +724,7 @@ PrefabInstance:
     - target: {fileID: 4351441682336464468, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5638795453484481311, guid: a6b9b077402cb9e4ea7d7ff614cc3edb,
         type: 3}
@@ -1127,11 +1174,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8310154396900858142}
   m_LocalRotation: {x: -0, y: -0, z: 0.06663048, w: 0.99777776}
-  m_LocalPosition: {x: -0.733, y: -0.758, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4141, y: 1.4141, z: 1.4141}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 195998261}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.6410003}
 --- !u!212 &8310154396900858140
 SpriteRenderer:
@@ -1213,25 +1260,10 @@ GameObject:
   - component: {fileID: 8310154396900858141}
   - component: {fileID: 8310154396900858138}
   - component: {fileID: 462004758532494684}
-  - component: {fileID: 8310154396900858143}
   m_Layer: 0
-  m_Name: attackArea
+  m_Name: Guss Attack
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8310154396900858143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8310154396900858142}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5a88304fbc81054696a7d7330fdd8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 630742786}
-  distance: {x: 1, y: 0, z: 0}

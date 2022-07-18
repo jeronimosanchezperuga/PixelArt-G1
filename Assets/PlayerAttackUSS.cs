@@ -7,6 +7,7 @@ public class PlayerAttackUSS : MonoBehaviour
     [SerializeField] GameObject sword;
     [SerializeField] Transform swordRef;
     [SerializeField] Vector3 swordDistance;
+    [SerializeField] float attackAreaSize = 1f;
     
     // Start is called before the first frame update
     void Start()
@@ -38,8 +39,8 @@ public class PlayerAttackUSS : MonoBehaviour
         Vector3 oldScale = sword.transform.localScale;
         Vector3 newScale = new Vector3( Mathf.Abs(oldScale.x) * transform.localScale.x,oldScale.y,oldScale.z) ;
         sword.transform.localScale = newScale;
-        Vector3 newDistance = new Vector2(Mathf.Abs(swordDistance.x) * transform.localScale.x, swordDistance.y);
-        sword.transform.position = swordRef.transform.position + newDistance ;
+        //Vector3 newDistance = new Vector2(Mathf.Abs(swordDistance.x) * attackAreaSize * transform.localScale.x, swordDistance.y);
+        //sword.transform.position = swordRef.transform.position + newDistance ;
     }
 
     void DisableSword()
