@@ -1,4 +1,4 @@
-1. Avanzar hacia la derecha
+﻿1. Avanzar hacia la derecha
 . Al saltar reducir la velocidad // MEJOR NO
 
 Aparecen fantasmas y avanzan hacia nosotros OK
@@ -25,6 +25,15 @@ Debemos matar/esquivar todos los fantasmas y llegar al final del nivel
 .. zonas de activación de enemigos
 .. zonas de muerte
 .. zona de llegada
+
+Agregar Arte
+. Boss fantasma
+. Slime (salta y al tocarte te hace daño)
+.. Despues de recibir se fusiona con otros slimes en un jefe
+. Boss slime
+..Dispara slimes (aviso y humo)
+. Boss Dragón (advertencia y ataque)
+
 
 
 
