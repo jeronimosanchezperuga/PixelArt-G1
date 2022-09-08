@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector2.up * fuerzaSalto,ForceMode2D.Impulse);
         }
 
-        estaEnElPiso = Physics2D.OverlapCircle(tr.position, 0.15f, layer);
+        estaEnElPiso = Physics2D.OverlapCircle(tr.position, 0.5f, layer);
         //if (!estaEnElPiso)
         //{
         //    fuerzaAvance = fuerzaAvanceEnElAire;
