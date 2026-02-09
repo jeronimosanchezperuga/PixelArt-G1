@@ -205,7 +205,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 7144542733967794488}
+  rb: {fileID: 0}
   runSpeed: 20
+  onStair: 0
+  stairX: 0
+  stairSpeed: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &7144542733967794484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,13 +238,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0f70f412912324098f4319bfd46d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 1
+  lives: 3
   health: 3
   blink: {fileID: 7144542733364884362}
   rb: {fileID: 7144542733967794489}
   knockBackForce: 10
   knockBackDuration: 1
   noDamageTime: 1
+  spawnPoint: {x: 3.3, y: 0.4, z: 0}
 --- !u!114 &7144542733967794488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 480
-  m_CrouchSpeed: 0.36
+  m_CrouchSpeed: 1
   m_jumpSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -269,6 +276,7 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+  m_wasCrouching: 0
 --- !u!114 &7144542733967794495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 7144542732838242433}
+  shield: {fileID: 0}
+  shieldRef: {fileID: 0}
 --- !u!114 &7144542734161857196
 MonoBehaviour:
   m_ObjectHideFlags: 0
