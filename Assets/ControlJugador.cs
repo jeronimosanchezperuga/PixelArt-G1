@@ -9,10 +9,12 @@ public class ControlJugador : MonoBehaviour
     public float fuerzaSalto;
     public Transform puntoSuelo;
     public bool enSuelo;
+    public bool modoFlappyBird = false;
     public LayerMask capaSuelo;
     public Transform playerSprite;
     public Animator animator;
     public bool moviendose;
+    public float radioDeteccionSuelo = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,9 @@ public class ControlJugador : MonoBehaviour
 
     void Update()
     {
-        enSuelo = Physics2D.OverlapCircle(puntoSuelo.position, 0.1f, capaSuelo);
+        enSuelo = Physics2D.OverlapCircle(puntoSuelo.position, radioDeteccionSuelo, capaSuelo);
 
-        if (enSuelo && playerRB != null && Input.GetKeyDown(KeyCode.W))
+        if ((enSuelo || modoFlappyBird) && playerRB != null && Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("upJump"))
         {
             playerRB.AddForce(Vector2.up * fuerzaSalto);
         }

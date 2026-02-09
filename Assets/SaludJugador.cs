@@ -42,7 +42,7 @@ public class SaludJugador : MonoBehaviour
 
     private void Morir()
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
    
