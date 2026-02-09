@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     public float runSpeed = 40f;
     float horizontalMove;
+    float verticalMove;
     bool jump = false;
     public bool onStair = false;
     public float stairX;
@@ -17,42 +18,42 @@ public class PlayerMovement : MonoBehaviour
     private float stairSpeed;
     public float minY;
     public float maxY;
+    private bool crouch;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        float verticalMove = Input.GetAxis("Vertical") * stairSpeed;
-
-
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        verticalMove = Input.GetAxis("Vertical") * stairSpeed;
 
         if (Input.GetButtonDown("wJump"))
         {
             jump = true;
         }
 
-        if (onStair && verticalMove != 0) 
-        {            
+        if (Input.GetButton("Crouch"))
+        {
+            crouch = true;
+        }else
+        {
+            crouch = false;
+        }
+
+        if (onStair && verticalMove != 0)
+        {
             //ajustar la x del Player con la escalera
             //transform.position = new Vector3(stairX,transform.position.y,transform.position.z);
             if (transform.position.y > minY && transform.position.y < maxY)
             {
                 transform.Translate(Vector3.up * verticalMove);
+                //TODO
+                //reproducir la animacion de subir/bajar escalera
             }
-            
         }
     }
 
     void FixedUpdate()
     {
-        characterController.Move(horizontalMove * Time.deltaTime,false,jump);
+        characterController.Move(horizontalMove * Time.deltaTime,crouch,jump);
         jump = false;
     }
 }
