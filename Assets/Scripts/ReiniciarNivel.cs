@@ -4,16 +4,31 @@ using UnityEngine;
 
 public class ReiniciarNivel : MonoBehaviour
 {
-    public Transform puntoInicio;
+    public Transform puntoInicioTR;
+    SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = false;
+        }
+        puntoInicioTR = GameObject.FindGameObjectWithTag("Respawn").transform;
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Choco");
+        if (!puntoInicioTR)
+        {
+            Debug.LogError("No se encuentra punto de inicio. Asegúrate de que un objeto con la etiqueta 'Respawn' esté presente en la escena.");
+            return;
+        }
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.position = puntoInicio.position;
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        } 
-
+            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
+            rb.velocity = Vector3.zero;
+            rb.MovePosition(puntoInicioTR.position);
+        }
     }
 }

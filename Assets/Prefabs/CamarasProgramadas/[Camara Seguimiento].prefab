@@ -232,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5333883229811537856}
   m_Layer: 0
-  m_Name: Camara Seguimiento
+  m_Name: '[Camara Seguimiento]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

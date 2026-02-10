@@ -344,9 +344,10 @@ MonoBehaviour:
   fuerzaSalto: 450
   puntoSuelo: {fileID: 1693113863682338552}
   enSuelo: 1
+  modoFlappyBird: 0
   capaSuelo:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1280
   playerSprite: {fileID: 1693113864441267945}
   animator: {fileID: 0}
   moviendose: 0
@@ -556,7 +557,7 @@ GameObject:
   - component: {fileID: 1693113864441267950}
   - component: {fileID: 1693113864441267951}
   m_Layer: 0
-  m_Name: PlayerSprite
+  m_Name: GraficosPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
